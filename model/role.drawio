@@ -1,0 +1,82 @@
+<mxfile compressed="false" host="Electron">
+  <diagram id="3a700c56-7e87-4f24-ace4-bc9e43059c3c" name="role">
+    <mxGraphModel dx="4418" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="ActorDomain" link="references/eClassifiers/ActorDomain/index.html" id="39481c6e-a159-4c7d-ba90-08fa47b2e774">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="320" y="310.00089437357343" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Section" link="references/eClassifiers/Section/index.html" id="4e524cbc-f635-4bb3-93ba-e57ba0daa1c4">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="-240.0036559128921" y="229.99736805440656" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="AbstractActor" link="references/eClassifiers/AbstractActor/index.html" id="4d2baa27-5361-419b-854d-8180ccfcb97c">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="249.99930320415638" y="229.99778769062965" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="f183326e-0ae3-420f-bf43-ea02d6572723" edge="1" parent="1" source="39481c6e-a159-4c7d-ba90-08fa47b2e774" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="4d2baa27-5361-419b-854d-8180ccfcb97c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="actors" link="references/eClassifiers/ActorDomain/references/eStructuralFeatures/actors/index.html" id="ab5f077e-d8ec-435d-a786-2d2b99d10654">
+          <mxCell edge="1" parent="1" source="39481c6e-a159-4c7d-ba90-08fa47b2e774" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="4d2baa27-5361-419b-854d-8180ccfcb97c">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Actor" link="references/eClassifiers/Actor/index.html" id="cc715c7b-f857-44cb-a89c-21995a992460">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="180.00005501919918" y="310.00139712173717" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="fd6bacaa-95c0-45db-a6fb-5c637b4a9587" edge="1" parent="1" source="cc715c7b-f857-44cb-a89c-21995a992460" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0" target="4d2baa27-5361-419b-854d-8180ccfcb97c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="RoleAssignment" link="references/eClassifiers/RoleAssignment/index.html" id="9e3a9bcc-7613-47e3-a641-7f24c9c5f057">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="50.00143718864041" y="229.99784864462214" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="actors" link="references/eClassifiers/RoleAssignment/references/eStructuralFeatures/actors/index.html" id="83c31704-d50d-4d48-8426-b4a9edc5ed5e">
+          <mxCell edge="1" parent="1" source="9e3a9bcc-7613-47e3-a641-7f24c9c5f057" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1" target="4d2baa27-5361-419b-854d-8180ccfcb97c">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Content" link="references/eClassifiers/Content/index.html" id="140df8e1-b075-4581-b40c-c12d8f0fe7b3">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="-100.00144612598774" y="229.99577264761388" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Role" link="references/eClassifiers/Role/index.html" id="f2971a52-7f1f-4bb1-a182-e3a3f812af91">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="50.006131937620694" y="149.99770791313375" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="assignments" link="references/eClassifiers/Role/references/eStructuralFeatures/assignments/index.html" id="3b01995c-bb0b-49b0-8e43-7d6dac78dfae">
+          <mxCell edge="1" parent="1" source="f2971a52-7f1f-4bb1-a182-e3a3f812af91" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="9e3a9bcc-7613-47e3-a641-7f24c9c5f057">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Undergoer" link="references/eClassifiers/Undergoer/index.html" id="7cf53f3e-84d1-4725-9de6-2265d633c459">
+          <mxCell parent="1" vertex="1">
+            <mxGeometry height="30" width="120" x="-170.00048010976502" y="149.99563487988092" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="roles" link="references/eClassifiers/Undergoer/references/eStructuralFeatures/roles/index.html" id="16171c51-af27-4d55-970e-027f9846aed2">
+          <mxCell edge="1" parent="1" source="7cf53f3e-84d1-4725-9de6-2265d633c459" style="rounded=0;orthogonalLoop=1;jettySize=1;html=1;startArrow=diamondThin;startFill=1" target="f2971a52-7f1f-4bb1-a182-e3a3f812af91">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="d6edac42-7b05-4428-aa55-ee00d17eef03" edge="1" parent="1" source="140df8e1-b075-4581-b40c-c12d8f0fe7b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="7cf53f3e-84d1-4725-9de6-2265d633c459">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f48336c8-9aa5-4008-9da9-8a660f78402a" edge="1" parent="1" source="4e524cbc-f635-4bb3-93ba-e57ba0daa1c4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="7cf53f3e-84d1-4725-9de6-2265d633c459">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
