@@ -433,6 +433,18 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 		   new String[] {
 			   "documentation", "*"
 		   });
+		addAnnotation
+		  (contentEClass,
+		   source,
+		   new String[] {
+			   "documentation", "*\nContent with roles. For example: author, editor"
+		   });
+		addAnnotation
+		  (sectionEClass,
+		   source,
+		   new String[] {
+			   "documentation", "*\nSection with roles. For example: author, editor"
+		   });
 	}
 
 	/**
