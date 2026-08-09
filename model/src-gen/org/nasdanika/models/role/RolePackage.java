@@ -705,6 +705,143 @@ public interface RolePackage extends EPackage {
 	 */
 	int ACTOR_DOMAIN_OPERATION_COUNT = NxcorePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.role.impl.ContentImpl <em>Content</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.role.impl.ContentImpl
+	 * @see org.nasdanika.models.role.impl.RolePackageImpl#getContent()
+	 * @generated
+	 */
+	int CONTENT = 6;
+
+	/**
+	 * The feature id for the '<em><b>Content</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT__CONTENT = NxcorePackage.CONTENT__CONTENT;
+
+	/**
+	 * The feature id for the '<em><b>Content Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT__CONTENT_REF = NxcorePackage.CONTENT__CONTENT_REF;
+
+	/**
+	 * The feature id for the '<em><b>Content Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT__CONTENT_TYPE = NxcorePackage.CONTENT__CONTENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Roles</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT__ROLES = NxcorePackage.CONTENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Content</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT_FEATURE_COUNT = NxcorePackage.CONTENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Content</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT_OPERATION_COUNT = NxcorePackage.CONTENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.nasdanika.models.role.impl.SectionImpl <em>Section</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.nasdanika.models.role.impl.SectionImpl
+	 * @see org.nasdanika.models.role.impl.RolePackageImpl#getSection()
+	 * @generated
+	 */
+	int SECTION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Title</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION__TITLE = NxcorePackage.SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION__ID = NxcorePackage.SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Children</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION__CHILDREN = NxcorePackage.SECTION__CHILDREN;
+
+	/**
+	 * The feature id for the '<em><b>Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION__CONTENTS = NxcorePackage.SECTION__CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Roles</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION__ROLES = NxcorePackage.SECTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION_FEATURE_COUNT = NxcorePackage.SECTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Section</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECTION_OPERATION_COUNT = NxcorePackage.SECTION_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.role.Undergoer <em>Undergoer</em>}'.
@@ -820,6 +957,26 @@ public interface RolePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getActorDomain_Actors();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.role.Content <em>Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Content</em>'.
+	 * @see org.nasdanika.models.role.Content
+	 * @generated
+	 */
+	EClass getContent();
+
+	/**
+	 * Returns the meta object for class '{@link org.nasdanika.models.role.Section <em>Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Section</em>'.
+	 * @see org.nasdanika.models.role.Section
+	 * @generated
+	 */
+	EClass getSection();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -943,6 +1100,26 @@ public interface RolePackage extends EPackage {
 		 * @generated
 		 */
 		EReference ACTOR_DOMAIN__ACTORS = eINSTANCE.getActorDomain_Actors();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.role.impl.ContentImpl <em>Content</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.role.impl.ContentImpl
+		 * @see org.nasdanika.models.role.impl.RolePackageImpl#getContent()
+		 * @generated
+		 */
+		EClass CONTENT = eINSTANCE.getContent();
+
+		/**
+		 * The meta object literal for the '{@link org.nasdanika.models.role.impl.SectionImpl <em>Section</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.nasdanika.models.role.impl.SectionImpl
+		 * @see org.nasdanika.models.role.impl.RolePackageImpl#getSection()
+		 * @generated
+		 */
+		EClass SECTION = eINSTANCE.getSection();
 
 	}
 

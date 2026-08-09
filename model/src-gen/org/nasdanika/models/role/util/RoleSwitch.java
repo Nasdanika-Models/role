@@ -14,6 +14,7 @@ import org.nasdanika.models.nxcore.NamedElement;
 import org.nasdanika.models.nxcore.NamedPeriod;
 import org.nasdanika.models.nxcore.Period;
 import org.nasdanika.models.nxcore.Referrable;
+import org.nasdanika.models.nxcore.SectionReference;
 import org.nasdanika.models.nxcore.StringIdentity;
 
 import org.nasdanika.models.role.*;
@@ -138,6 +139,23 @@ public class RoleSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case RolePackage.CONTENT: {
+				Content content = (Content)theEObject;
+				T result = caseContent(content);
+				if (result == null) result = caseNxcore_Content(content);
+				if (result == null) result = caseUndergoer(content);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RolePackage.SECTION: {
+				Section section = (Section)theEObject;
+				T result = caseSection(section);
+				if (result == null) result = caseNxcore_Section(section);
+				if (result == null) result = caseUndergoer(section);
+				if (result == null) result = caseSectionReference(section);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -229,6 +247,36 @@ public class RoleSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseActorDomain(ActorDomain object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Content</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContent(Content object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSection(Section object) {
 		return null;
 	}
 
@@ -349,6 +397,51 @@ public class RoleSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseNamedPeriod(NamedPeriod object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Content</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNxcore_Content(org.nasdanika.models.nxcore.Content object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Section Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSectionReference(SectionReference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNxcore_Section(org.nasdanika.models.nxcore.Section object) {
 		return null;
 	}
 

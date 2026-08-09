@@ -54,3 +54,20 @@ class ActorDomain extends NamedElement, AbstractActor {
     contains AbstractActor[] actors
     
 }
+
+// NxCore specializations
+
+/**
+ * Content with roles. For example: author, editor
+ */
+class Content extends org.nasdanika.models.nxcore.Content, Undergoer {
+	
+}
+
+/**
+ * Section with roles. For example: author, editor
+ */
+class Section extends org.nasdanika.models.nxcore.Section, Undergoer {
+	
+}
+

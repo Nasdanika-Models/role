@@ -15,10 +15,12 @@ import org.nasdanika.models.nxcore.NxcorePackage;
 import org.nasdanika.models.role.AbstractActor;
 import org.nasdanika.models.role.Actor;
 import org.nasdanika.models.role.ActorDomain;
+import org.nasdanika.models.role.Content;
 import org.nasdanika.models.role.Role;
 import org.nasdanika.models.role.RoleAssignment;
 import org.nasdanika.models.role.RoleFactory;
 import org.nasdanika.models.role.RolePackage;
+import org.nasdanika.models.role.Section;
 import org.nasdanika.models.role.Undergoer;
 
 /**
@@ -69,6 +71,20 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 	 * @generated
 	 */
 	private EClass actorDomainEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass contentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sectionEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -250,6 +266,26 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getContent() {
+		return contentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSection() {
+		return sectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public RoleFactory getRoleFactory() {
 		return (RoleFactory)getEFactoryInstance();
 	}
@@ -289,6 +325,10 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 
 		actorDomainEClass = createEClass(ACTOR_DOMAIN);
 		createEReference(actorDomainEClass, ACTOR_DOMAIN__ACTORS);
+
+		contentEClass = createEClass(CONTENT);
+
+		sectionEClass = createEClass(SECTION);
 	}
 
 	/**
@@ -330,6 +370,10 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 		actorEClass.getESuperTypes().add(this.getAbstractActor());
 		actorDomainEClass.getESuperTypes().add(theNxcorePackage.getNamedElement());
 		actorDomainEClass.getESuperTypes().add(this.getAbstractActor());
+		contentEClass.getESuperTypes().add(theNxcorePackage.getContent());
+		contentEClass.getESuperTypes().add(this.getUndergoer());
+		sectionEClass.getESuperTypes().add(theNxcorePackage.getSection());
+		sectionEClass.getESuperTypes().add(this.getUndergoer());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(undergoerEClass, Undergoer.class, "Undergoer", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -348,6 +392,10 @@ public class RolePackageImpl extends EPackageImpl implements RolePackage {
 
 		initEClass(actorDomainEClass, ActorDomain.class, "ActorDomain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getActorDomain_Actors(), this.getAbstractActor(), null, "actors", null, 0, -1, ActorDomain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(contentEClass, Content.class, "Content", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(sectionEClass, Section.class, "Section", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -58,6 +58,24 @@ public interface RoleFactory extends EFactory {
 	ActorDomain createActorDomain();
 
 	/**
+	 * Returns a new object of class '<em>Content</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Content</em>'.
+	 * @generated
+	 */
+	Content createContent();
+
+	/**
+	 * Returns a new object of class '<em>Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Section</em>'.
+	 * @generated
+	 */
+	Section createSection();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

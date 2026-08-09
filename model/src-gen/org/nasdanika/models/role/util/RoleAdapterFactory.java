@@ -16,6 +16,7 @@ import org.nasdanika.models.nxcore.NamedElement;
 import org.nasdanika.models.nxcore.NamedPeriod;
 import org.nasdanika.models.nxcore.Period;
 import org.nasdanika.models.nxcore.Referrable;
+import org.nasdanika.models.nxcore.SectionReference;
 import org.nasdanika.models.nxcore.StringIdentity;
 
 import org.nasdanika.models.role.*;
@@ -101,6 +102,14 @@ public class RoleAdapterFactory extends AdapterFactoryImpl {
 				return createActorDomainAdapter();
 			}
 			@Override
+			public Adapter caseContent(Content object) {
+				return createContentAdapter();
+			}
+			@Override
+			public Adapter caseSection(Section object) {
+				return createSectionAdapter();
+			}
+			@Override
 			public Adapter caseReferrable(Referrable object) {
 				return createReferrableAdapter();
 			}
@@ -131,6 +140,18 @@ public class RoleAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseNamedPeriod(NamedPeriod object) {
 				return createNamedPeriodAdapter();
+			}
+			@Override
+			public Adapter caseNxcore_Content(org.nasdanika.models.nxcore.Content object) {
+				return createNxcore_ContentAdapter();
+			}
+			@Override
+			public Adapter caseSectionReference(SectionReference object) {
+				return createSectionReferenceAdapter();
+			}
+			@Override
+			public Adapter caseNxcore_Section(org.nasdanika.models.nxcore.Section object) {
+				return createNxcore_SectionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -233,6 +254,34 @@ public class RoleAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createActorDomainAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.role.Content <em>Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.role.Content
+	 * @generated
+	 */
+	public Adapter createContentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.role.Section <em>Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.role.Section
+	 * @generated
+	 */
+	public Adapter createSectionAdapter() {
 		return null;
 	}
 
@@ -345,6 +394,48 @@ public class RoleAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createNamedPeriodAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.nxcore.Content <em>Content</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.nxcore.Content
+	 * @generated
+	 */
+	public Adapter createNxcore_ContentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.nxcore.SectionReference <em>Section Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.nxcore.SectionReference
+	 * @generated
+	 */
+	public Adapter createSectionReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.nxcore.Section <em>Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.nasdanika.models.nxcore.Section
+	 * @generated
+	 */
+	public Adapter createNxcore_SectionAdapter() {
 		return null;
 	}
 

@@ -60,6 +60,8 @@ public class RoleFactoryImpl extends EFactoryImpl implements RoleFactory {
 			case RolePackage.ROLE_ASSIGNMENT: return createRoleAssignment();
 			case RolePackage.ACTOR: return createActor();
 			case RolePackage.ACTOR_DOMAIN: return createActorDomain();
+			case RolePackage.CONTENT: return createContent();
+			case RolePackage.SECTION: return createSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -107,6 +109,28 @@ public class RoleFactoryImpl extends EFactoryImpl implements RoleFactory {
 	public ActorDomain createActorDomain() {
 		ActorDomainImpl actorDomain = new ActorDomainImpl();
 		return actorDomain;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content createContent() {
+		ContentImpl content = new ContentImpl();
+		return content;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Section createSection() {
+		SectionImpl section = new SectionImpl();
+		return section;
 	}
 
 	/**
