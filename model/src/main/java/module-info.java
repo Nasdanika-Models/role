@@ -9,8 +9,7 @@ module org.nasdanika.models.role {
 	
 	requires transitive org.eclipse.emf.ecore;
 	requires transitive org.eclipse.emf.common;
-	requires transitive org.nasdanika.models.nxcore;
-	
+	requires transitive org.nasdanika.models.nxcore;	
 	
 	provides CapabilityFactory with 
 		RoleEPackageResourceSetCapabilityFactory;
