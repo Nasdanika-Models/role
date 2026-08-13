@@ -41,12 +41,13 @@ jobs:
           chmod u+x nsd          
           pwd
           ls ..
-          ./nsd xcore ../model/src/main/resources/org/nasdanika/models/role/role.xcore doc --diagram=role.drawio --doc-stubs --doc-dir=../model/doc save ../model/role.xmi
+          ./nsd xcore -r=https://nxcore.models.nasdanika.org/nxcore.xcore ../model/src/main/resources/org/nasdanika/models/role/role.xcore doc --diagram=role.drawio --doc-stubs --doc-dir=../model/doc save ../model/role.xmi
       - name: Generate Ecore site
         working-directory: nsd-cli
         run: |
           ./nsd model ../model/root-action.yml labels site -r=-1 -F ../model/page-template.yml ../docs
           cp role.drawio ../docs
+          cp ../model/src/main/resources/org/nasdanika/models/role/role.xcore ../docs
           cp -R ../images ../docs
           zip -r ../docs/doc-stubs.zip ../model/doc
           ls ../docs
